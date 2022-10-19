@@ -9,7 +9,7 @@ import Header from './Header';
 
 const styles = {
   main: {
-    // background: '#A3A2A240',
+    background: 'yellow',
   }
 };
 
@@ -33,7 +33,8 @@ export default function PortfolioContainer() {
 
   return (
     <div style={styles.main}>
-      <Header handlePageChange={handlePageChange} />
+      <Header />
+      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer />
     </div>

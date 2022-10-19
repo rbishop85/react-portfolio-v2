@@ -2,7 +2,7 @@ import React from 'react';
 
 const styles = {
   section: {
-    background: '#e8eaf6',
+    // background: '#e8eaf6',
   }
 };
 

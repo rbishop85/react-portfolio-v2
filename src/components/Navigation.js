@@ -7,21 +7,28 @@ import { styled } from "@mui/material/styles";
 
 const styles = {
   navigation: {
-    background: '#e8eaf6',
+    // background: 'yellow',
     marginTop: 0
   }
 };
 
 const StyledTab = styled(Tab)({
-  "&.Mui-selected": {
-    color: "#007B6D"
-  },
   "&.MuiTouchRipple-root": {
-    color: "#007B6D"
+    color: "#E0E1DD"
+  },
+  "&.MuiButtonBase-root.MuiTab-root": {
+    fontSize: "15px",
+    fontWeight: 700,
+    paddingLeft: 0,
+    paddingRight: 0
+  },
+  "&.Mui-selected": {
+    color: "#E0E1DD",
+    fontSize: "15px"
   },
 })
 
-function Navigation({ currentPage, handlePageChange }) {
+function Navigation({ handlePageChange }) {
   const [value, setValue] = React.useState('about');
 
   const handleChange = (event, newValue) => {
@@ -34,14 +41,15 @@ function Navigation({ currentPage, handlePageChange }) {
         value={value}
         onChange={handleChange}
         centered
+        textColor="#000000"
         sx={{
-          '& .MuiTabs-indicator': { backgroundColor: "#007B6D"  }
+          '& .MuiTabs-indicator': { backgroundColor: "#E0E1DD" }
         }}
         aria-label="navigation tabs"
       >
         <StyledTab 
           value="about" 
-          label="About Me"
+          label="About"
           href="#about"
           onClick={() => handlePageChange('About')}
         />
@@ -53,7 +61,7 @@ function Navigation({ currentPage, handlePageChange }) {
         />
         <StyledTab 
           value="contact" 
-          label="Contact Me"
+          label="Contact"
           href="#contact"
           onClick={() => handlePageChange('Contact')}
         />

@@ -1,14 +1,22 @@
+import { Grid } from '@mui/material';
 import React from 'react';
+import selfImage from '../../assets/images/me.jpg'
 
 const styles = {
   section: {
-    background: '#e8eaf6',
+    // background: '#A3A2A240',
+  },
+  image: {
+    borderRadius: 100,
   }
 };
 
 export default function About() {
   return (
     <div style={styles.section}>
+      <Grid container justifyContent="center">
+      <img src={selfImage} alt="Me in front of some trees" height="300px" style={styles.image} />
+      </Grid>
       <h1>About Page</h1>
       <p>
       Welcome to my portfolio. My name is Robert Bishop and I'm currently a student in a Web Coding Bootcamp being run by the University of Washington. I've had an interest in computers going back to when I started tinkering with my personal computer in high school. After high school I pursued an Associates program in computer networking through a tech college in Arizona before returning to my home in the PNW.
