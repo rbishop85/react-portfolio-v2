@@ -1,8 +1,14 @@
 import React from 'react';
 
+const styles = {
+  section: {
+    background: '#e8eaf6',
+  }
+};
+
 export default function About() {
   return (
-    <div>
+    <div style={styles.section}>
       <h1>About Page</h1>
       <p>
       Welcome to my portfolio. My name is Robert Bishop and I'm currently a student in a Web Coding Bootcamp being run by the University of Washington. I've had an interest in computers going back to when I started tinkering with my personal computer in high school. After high school I pursued an Associates program in computer networking through a tech college in Arizona before returning to my home in the PNW.

@@ -5,6 +5,13 @@ import Box from '@mui/material/Box';
 
 import { styled } from "@mui/material/styles";
 
+const styles = {
+  navigation: {
+    background: '#e8eaf6',
+    marginTop: 0
+  }
+};
+
 const StyledTab = styled(Tab)({
   "&.Mui-selected": {
     color: "#007B6D"
@@ -12,7 +19,6 @@ const StyledTab = styled(Tab)({
   "&.MuiTouchRipple-root": {
     color: "#007B6D"
   },
-
 })
 
 function Navigation({ currentPage, handlePageChange }) {
@@ -23,7 +29,7 @@ function Navigation({ currentPage, handlePageChange }) {
   };
 
   return (
-    <Box sx={{ width: '100%', }}>
+    <Box sx={{ width: '100%', }} style={styles.navigation}>
       <Tabs
         value={value}
         onChange={handleChange}

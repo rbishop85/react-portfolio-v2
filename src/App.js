@@ -1,3 +1,4 @@
+import { Container } from "@mui/material";
 import React from "react";
 import PortfolioContainer from "./components/PortfolioContainer";
 
@@ -5,7 +6,9 @@ import PortfolioContainer from "./components/PortfolioContainer";
 
 function App() {
     return (
-        <PortfolioContainer />
+        <Container maxWidth="lg">
+            <PortfolioContainer />
+        </Container>
     )
 }
 
