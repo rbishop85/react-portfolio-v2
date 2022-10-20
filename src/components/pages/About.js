@@ -4,7 +4,9 @@ import selfImage from '../../assets/images/me.jpg'
 
 const styles = {
   section: {
-    // background: '#A3A2A240',
+    // background: '#00000060',
+    marginTop: 40,
+    textAlign: "center"
   },
   image: {
     borderRadius: 100,
@@ -17,7 +19,7 @@ export default function About() {
       <Grid container justifyContent="center">
       <img src={selfImage} alt="Me in front of some trees" height="300px" style={styles.image} />
       </Grid>
-      <h1>About Page</h1>
+      <h2>About Me</h2>
       <p>
       Welcome to my portfolio. My name is Robert Bishop and I'm currently a student in a Web Coding Bootcamp being run by the University of Washington. I've had an interest in computers going back to when I started tinkering with my personal computer in high school. After high school I pursued an Associates program in computer networking through a tech college in Arizona before returning to my home in the PNW.
       </p>

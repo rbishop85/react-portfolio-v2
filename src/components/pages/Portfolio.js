@@ -9,7 +9,7 @@ const styles = {
 export default function Portfolio() {
   return (
     <div style={styles.section}>
-      <h1>Portfolio Page</h1>
+      <h2>Portfolio Page</h2>
       <p>
         This is a default Portfolio page.
       </p>

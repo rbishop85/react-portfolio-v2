@@ -9,7 +9,7 @@ const styles = {
 export default function Resume() {
   return (
     <div style={styles.section}>
-      <h1>Resume Page</h1>
+      <h2>Resume Page</h2>
       <p>
         This is a default Resume page.
       </p>

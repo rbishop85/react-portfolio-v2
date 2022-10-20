@@ -7,7 +7,8 @@ const styles = {
       // background: '#e8eaf6',
       overflow: 'auto',
       paddingTop: 25,
-      paddingBottom: 25
+      paddingBottom: 25,
+      borderBottom: "3px solid #FFFFFF"
     },
     title: {
       marginTop: 0,

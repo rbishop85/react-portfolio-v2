@@ -9,7 +9,7 @@ const styles = {
 export default function Contact() {
   return (
     <div style={styles.section}>
-      <h1>Contact Page</h1>
+      <h2>Contact Page</h2>
       <p>
         This is a default Contact page.
       </p>

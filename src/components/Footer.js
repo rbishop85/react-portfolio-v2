@@ -9,7 +9,7 @@ const styles = {
 export default function Footer() {
   return (
     <div style={styles.footer}>
-      <h1>Footer</h1>
+      <h2>Footer</h2>
     </div>
   );
 }
