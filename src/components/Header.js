@@ -8,7 +8,7 @@ const styles = {
       overflow: 'auto',
       paddingTop: 25,
       paddingBottom: 25,
-      borderBottom: "3px solid #FFFFFF"
+      borderBottom: "3px solid #007b6d"
     },
     title: {
       marginTop: 0,

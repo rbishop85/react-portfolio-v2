@@ -14,7 +14,7 @@ const styles = {
 
 const StyledTab = styled(Tab)({
   "&.MuiTouchRipple-root": {
-    color: "FFFF00"
+    color: "#D3D3D3"
   },
   "&.MuiButtonBase-root.MuiTab-root": {
     fontSize: "15px",
@@ -23,7 +23,7 @@ const StyledTab = styled(Tab)({
     paddingRight: 0
   },
   "&.Mui-selected": {
-    color: "#FFFF00",
+    color: "#D3D3D3",
     fontSize: "15px"
   },
 })
@@ -41,9 +41,9 @@ function Navigation({ handlePageChange }) {
         value={value}
         onChange={handleChange}
         centered
-        textColor="#000000"
+        textColor="inherit"
         sx={{
-          '& .MuiTabs-indicator': { backgroundColor: "#FFFF00" }
+          '& .MuiTabs-indicator': { backgroundColor: "#D3D3D3" }
         }}
         aria-label="navigation tabs"
       >

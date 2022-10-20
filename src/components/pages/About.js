@@ -10,7 +10,9 @@ const styles = {
   },
   image: {
     borderRadius: 100,
+    border: "3px solid #007b6d",
   }
+  
 };
 
 export default function About() {
