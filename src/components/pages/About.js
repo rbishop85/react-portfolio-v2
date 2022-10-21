@@ -4,7 +4,6 @@ import selfImage from '../../assets/images/me.jpg'
 
 const styles = {
   section: {
-    // background: '#00000060',
     marginTop: 40,
     textAlign: "center"
   },

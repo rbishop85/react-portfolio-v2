@@ -7,7 +7,6 @@ import { styled } from "@mui/material/styles";
 
 const styles = {
   navigation: {
-    // background: 'yellow',
     marginTop: 0
   }
 };

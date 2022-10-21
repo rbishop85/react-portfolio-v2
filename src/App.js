@@ -7,9 +7,9 @@ import "./assets/styles/styles.css"
 
 function App() {
     return (
-        <Container maxWidth="lg" >
+        <div className="app" id="light">
             <PortfolioContainer />
-        </Container>
+        </div>
     )
 }
 

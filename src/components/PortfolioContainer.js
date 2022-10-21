@@ -6,10 +6,10 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Footer from './Footer';
 import Header from './Header';
+import { Container } from "@mui/material";
 
 const styles = {
   main: {
-    // background: '#A3A2A240',
   }
 };
 
@@ -32,10 +32,10 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div style={styles.main}>
+    <Container  maxWidth="lg">
       <Header handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer />
-    </div>
+    </Container>
   );
 }

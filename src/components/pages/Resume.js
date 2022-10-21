@@ -26,18 +26,6 @@ export default function Resume() {
     setNumPages(numPages);
   }
 
-  // function removeTextLayerOffset() {
-  //   const textLayers = document.querySelectorAll(
-  //     '.react-pdf__Page__textContent'
-  //   );
-  //   textLayers.forEach((layer) => {
-  //     const { style } = layer;
-  //     style.top = '0';
-  //     style.left = '0';
-  //     style.transform = '';
-  //   });
-  // }
-
   return (
     <Grid container direction="column" alignItems="center">
       <h2>Resume Page</h2>

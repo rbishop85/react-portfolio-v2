@@ -4,7 +4,6 @@ import Navigation from './Navigation';
 
 const styles = {
     header: {
-      // background: '#e8eaf6',
       overflow: 'auto',
       paddingTop: 25,
       paddingBottom: 25,
