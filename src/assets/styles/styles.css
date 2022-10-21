@@ -23,6 +23,15 @@ body {
     margin: 0
 }
 
+.footer h3 {
+    font-size: 30px;
+}
+
+
+.footer a:link, .footer a:visited, .footer a:hover, .footer a:active {
+    color: #D3D3D3;
+}
+
 /* #dark{
     background-color: #FFFFFF;
 } */

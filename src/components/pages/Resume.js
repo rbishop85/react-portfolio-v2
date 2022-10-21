@@ -6,6 +6,9 @@ import Button from '@mui/material/Button';
 import pdf from '../../assets/pdf/resume.pdf';
 
 const styles = {
+  section: {
+    marginTop: 40,
+  },
   spaceSide: {
     marginLeft: 10,
     marginRight: 10,
@@ -27,8 +30,7 @@ export default function Resume() {
   }
 
   return (
-    <Grid container direction="column" alignItems="center">
-      <h2>Resume Page</h2>
+    <Grid container direction="column" alignItems="center" style={styles.section}>
       <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} />
       </Document>
