@@ -2,11 +2,12 @@ import React from 'react';
 import { Grid } from '@mui/material';
 import { GrGithub, GrLinkedin, GrMail } from 'react-icons/gr'
 
-const styles = {
-    footer: {
-
-    }
-  };
+// const styles = {
+//     footer: {
+//       position: "fixed",
+//       bottom: 0
+//     }
+//   };
 
 export default function Footer() {
   return (
