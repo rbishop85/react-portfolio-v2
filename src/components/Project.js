@@ -15,7 +15,7 @@ const styles = {
 
 export default function Project({ id, title, description, image, repo, live }) {
   return (
-    <Grid item xs={10} md={6} key={id}>
+    <Grid item xs={10} md={6} key={id} className="project">
       <Card style={styles.box}>
         <Box sx={{ position: 'relative' }}>
           <CardMedia
@@ -37,12 +37,12 @@ export default function Project({ id, title, description, image, repo, live }) {
             <Typography variant="h5">{title}</Typography>
             <Typography variant="body2">{description}</Typography>
 
-            <Grid container spacing={2} justifyContent="center">
+            <Grid container spacing={4} justifyContent="center">
               <Grid item>
-                <a href="www.github.com">Repo</a>
+                <a href={repo} target="_blank">Repo</a>
               </Grid>
               <Grid item>
-                <a href="www.github.com">Live</a>
+                <a href={live} target="_blank">Live</a>
               </Grid>
             </Grid>
 

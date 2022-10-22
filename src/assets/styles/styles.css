@@ -32,6 +32,13 @@ body {
     color: #D3D3D3;
 }
 
+.project a:link, .project a:visited, .project a:hover, .project a:active {
+    color: #007b6d;
+}
+
+
+
+
 /* #dark{
     background-color: #FFFFFF;
 } */

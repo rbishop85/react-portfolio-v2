@@ -1,3 +1,8 @@
+Things to finish:
+- Rewrite about section
+- Add Technologies I know
+- Add Contact form that meets requirements laid out in readme
+
 Future Plans:
 - Proper page routing
 - Project Cards

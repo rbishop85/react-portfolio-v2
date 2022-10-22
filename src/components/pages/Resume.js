@@ -62,6 +62,7 @@ export default function Resume() {
           </Button>
         </Grid>
       }
+      <Button variant="outlined" href={pdf} download>Download</Button>
     </Grid>
   );
 }
