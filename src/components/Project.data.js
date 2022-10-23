@@ -5,6 +5,7 @@ import schedulerImage from "../assets/images/scheduler.jpg"
 import noteImage from "../assets/images/notetaker.jpg"
 import weatherImage from "../assets/images/weather.jpg"
 
+// Array of objects json objects for individual project info
 const data = [
     {
         "id": 1,

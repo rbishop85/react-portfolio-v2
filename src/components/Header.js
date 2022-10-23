@@ -2,6 +2,7 @@ import { Grid } from '@mui/material';
 import React from 'react';
 import Navigation from './Navigation';
 
+// In-line styling
 const styles = {
     header: {
       overflow: 'auto',
@@ -22,6 +23,7 @@ export default function Header({ handlePageChange }) {
         <h1 style={styles.title}>Robert Bishop</h1>
       </Grid>
       <Grid item xs={12} md={6}>
+        {/* Load navigation component */}
         <Navigation handlePageChange={handlePageChange} />
       </Grid>
     </Grid>

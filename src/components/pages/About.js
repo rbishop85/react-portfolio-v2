@@ -1,10 +1,13 @@
-import { Grid } from '@mui/material';
 import React from 'react';
+import { Grid } from '@mui/material';
+// Pulling in npm for displaying my github calendar
 import GitHubCalendar from "react-github-calendar";
+// Pulling in icons for my list of tools
 import { SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiExpress, SiReact, SiMysql, SiMongodb } from 'react-icons/si'
 
 import selfImage from '../../assets/images/me.jpg'
 
+// Some in-line styling for objects
 const styles = {
   section: {
     marginTop: 40,
@@ -22,20 +25,14 @@ const styles = {
   }
 };
 
-// const styles = {
-//   box: {
-    
-//     backgroundColor: "#000000",
-//     color: "#D3D3D3"
-//   }
-// };
-
 export default function About() {
   return (
     <div style={styles.section} className="about">
       <Grid container direction="column" alignItems="center">
+        {/* Picture of me */}
       <img src={selfImage} alt="Me in front of some trees" height="300px" style={styles.image} />
       
+      {/* Brief section talking about myself */}
       <h2>About Me</h2>
       <p>
         Welcome to my portfolio. My name is Robert Bishop and I'm currently a student in a Web Coding Bootcamp being run by the University of Washington. I've had an interest in computers going back to when I started tinkering with my personal computer in high school. After high school I pursued an Associates program in computer networking through a tech college in Arizona before returning to my home in the PNW.
@@ -50,6 +47,7 @@ export default function About() {
         I'm looking forward to opportunities to both test and prove my capabilities, as well as simply learn new things.
       </p>
       <div style={styles.divider} />
+      {/* Icons and descriptions for languages I'm trained in */}
       <h2>My Tools</h2>
       <Grid container justifyContents="center" xs={10} md={6}>
         <Grid container direction="column" alignItems="center" justifyContent="space-between" xs={3} className="tool">
@@ -89,6 +87,7 @@ export default function About() {
       <div style={styles.divider} />
       <h2>Coding Activity</h2>
       <GitHubCalendar
+      // Configuration for github commit calendar display
         username="rbishop85"
         blockSize={15}
         blockMargin={5}

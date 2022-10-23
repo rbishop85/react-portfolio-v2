@@ -2,15 +2,9 @@ import React from 'react';
 import { Grid } from '@mui/material';
 import { GrGithub, GrLinkedin, GrMail } from 'react-icons/gr'
 
-// const styles = {
-//     footer: {
-//       position: "fixed",
-//       bottom: 0
-//     }
-//   };
-
 export default function Footer() {
   return (
+    // Icons and links to various contact methods
     <Grid container spacing={2} justifyContent="center" className="footer">
       <Grid item>
       <a href="mailto:rbishop85@gmail.com">

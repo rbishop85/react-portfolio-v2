@@ -5,12 +5,14 @@ import Box from '@mui/material/Box';
 
 import { styled } from "@mui/material/styles";
 
+// In-line styling
 const styles = {
   navigation: {
     marginTop: 0
   }
 };
 
+// Custom styling for MUI tabs
 const StyledTab = styled(Tab)({
   "&.MuiTouchRipple-root": {
     color: "#D3D3D3"
@@ -28,8 +30,10 @@ const StyledTab = styled(Tab)({
 })
 
 function Navigation({ handlePageChange }) {
+  // State info for tracking current page
   const [value, setValue] = React.useState('about');
 
+  // What to do when tab is changed
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -46,6 +50,7 @@ function Navigation({ handlePageChange }) {
         }}
         aria-label="navigation tabs"
       >
+        {/* Individual tabs for pages */}
         <StyledTab 
           value="about" 
           label="About"

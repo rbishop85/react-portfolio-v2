@@ -5,6 +5,7 @@ import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 
+// In-line styling
 const styles = {
     box: {
       border: "3px solid #007b6d",
@@ -13,6 +14,7 @@ const styles = {
     }
   };
 
+  // Page layout for each individual project
 export default function Project({ id, title, description, image, repo, live }) {
   return (
     <Grid item xs={10} md={6} key={id} className="project">
