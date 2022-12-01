@@ -30,13 +30,11 @@ const StyledTab = styled(Tab)({
   },
 })
 
-function Navigation() {
-  // State info for tracking current page
-  const [value, setValue] = React.useState('about');
+function Navigation({ currentTab, setCurrentTab }) {
 
   // What to do when tab is changed
   const handleChange = (event, newValue) => {
-    setValue(newValue);
+    setCurrentTab(newValue);
   };
 
   const routes = ["/", "/portfolio", "/contact", "resume"]
@@ -44,7 +42,7 @@ function Navigation() {
   return (
     <Box sx={{ width: '100%', }} style={styles.navigation}>
       <Tabs
-        value={value}
+        value={currentTab}
         onChange={handleChange}
         centered
         textColor="inherit"

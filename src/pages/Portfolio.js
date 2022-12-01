@@ -12,7 +12,11 @@ const styles = {
   }
 };
 
-export default function Portfolio() {
+export default function Portfolio({ setCurrentTab }) {
+
+  // Ensures that if site is loaded directly to this page that the proper tab will bet highlighted
+  setCurrentTab("portfolio")
+
   return (
     <div>
       <h2 style={styles.title}>My Projects:</h2>

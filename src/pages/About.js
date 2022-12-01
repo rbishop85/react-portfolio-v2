@@ -25,7 +25,11 @@ const styles = {
   }
 };
 
-export default function About() {
+export default function About({ setCurrentTab }) {
+
+  // Ensures that if site is loaded directly to this page that the proper tab will bet highlighted
+  setCurrentTab("about")
+
   return (
     <div style={styles.section} className="about">
       <Grid container direction="column" alignItems="center">

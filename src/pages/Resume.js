@@ -20,7 +20,10 @@ const styles = {
   }
 };
 
-export default function Resume() {
+export default function Resume({ setCurrentTab }) {
+
+  // Ensures that if site is loaded directly to this page that the proper tab will bet highlighted
+  setCurrentTab("resume")
 
   // Set state for pdf page info
   const [numPages, setNumPages] = useState(null);

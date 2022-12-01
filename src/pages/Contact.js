@@ -18,7 +18,10 @@ const formStyle = {
 };
 
 
-const Contact = () => {
+const Contact = ({ setCurrentTab }) => {
+
+  // Ensures that if site is loaded directly to this page that the proper tab will bet highlighted
+  setCurrentTab("contact")
 
   // States for the 3 contact form fields
   const [name, setName] = useState("");

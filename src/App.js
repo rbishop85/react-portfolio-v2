@@ -26,10 +26,10 @@ function App() {
                 <Container  maxWidth="lg">
                     <Header currentTab={currentTab} setCurrentTab={setCurrentTab} />
                     <Routes>
-                        <Route path="/" element={<About />} />
-                        <Route path="/portfolio" element={<Portfolio />} />
-                        <Route path="/contact" element={<Contact />} />
-                        <Route path="/resume" element={<Resume />} />
+                        <Route path="/" element={<About setCurrentTab={setCurrentTab} />} />
+                        <Route path="/portfolio" element={<Portfolio setCurrentTab={setCurrentTab} />} />
+                        <Route path="/contact" element={<Contact setCurrentTab={setCurrentTab} />} />
+                        <Route path="/resume" element={<Resume setCurrentTab={setCurrentTab} />} />
                     </Routes>
                     <Footer />
                 </Container>
