@@ -16,11 +16,15 @@ import "./assets/styles/styles.css";
 
 // Main layer of app, everything else cascades down from here
 function App() {
+
+    // State info for tracking current tab
+    const [currentTab, setCurrentTab] = React.useState('about');
+
     return (
         <div className="app">
             <Router>
                 <Container  maxWidth="lg">
-                    <Header />
+                    <Header currentTab={currentTab} setCurrentTab={setCurrentTab} />
                     <Routes>
                         <Route path="/" element={<About />} />
                         <Route path="/portfolio" element={<Portfolio />} />
