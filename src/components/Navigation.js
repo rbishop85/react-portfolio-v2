@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { Link } from "react-router-dom";
+
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-
 import { styled } from "@mui/material/styles";
 
 // In-line styling
@@ -29,7 +30,7 @@ const StyledTab = styled(Tab)({
   },
 })
 
-function Navigation({ handlePageChange }) {
+function Navigation() {
   // State info for tracking current page
   const [value, setValue] = React.useState('about');
 
@@ -37,6 +38,8 @@ function Navigation({ handlePageChange }) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const routes = ["/", "/portfolio", "/contact", "resume"]
 
   return (
     <Box sx={{ width: '100%', }} style={styles.navigation}>
@@ -54,26 +57,26 @@ function Navigation({ handlePageChange }) {
         <StyledTab 
           value="about" 
           label="About"
-          href="#about"
-          onClick={() => handlePageChange('About')}
+          component={Link}
+          to={routes[0]}
         />
         <StyledTab 
           value="portfolio" 
           label="Portfolio"
-          href="#portfolio"
-          onClick={() => handlePageChange('Portfolio')}
+          component={Link}
+          to={routes[1]}
         />
         <StyledTab 
           value="contact" 
           label="Contact"
-          href="#contact"
-          onClick={() => handlePageChange('Contact')}
+          component={Link}
+          to={routes[2]}
         />
         <StyledTab 
           value="resume" 
           label="Resume"
-          href="#resume"
-          onClick={() => handlePageChange('Resume')}
+          component={Link}
+          to={routes[3]}
         />
       </Tabs>
     </Box>

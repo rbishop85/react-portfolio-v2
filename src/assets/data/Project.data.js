@@ -1,14 +1,22 @@
-import whiskyImage from "../assets/images/whiskyjournal.jpg";
-import quoteImage from "../assets/images/quoteme.jpg";
-import blogImage from "../assets/images/techblog.jpg";
-import schedulerImage from "../assets/images/scheduler.jpg"
-import noteImage from "../assets/images/notetaker.jpg"
-import weatherImage from "../assets/images/weather.jpg"
+import whiskyImage from "../images/whiskyjournal.jpg";
+import quoteImage from "../images/quoteme.jpg";
+import blogImage from "../images/techblog.jpg";
+import schedulerImage from "../images/scheduler.jpg"
+import noteImage from "../images/notetaker.jpg"
+import totaskImage from "../images/totask.jpg"
 
 // Array of objects json objects for individual project info
 const data = [
     {
         "id": 1,
+        "title": "ToTask",
+        "description": "Full-stack group project allowing user to find people to help them complete tasks",
+        "image": totaskImage,
+        "repo": "https://github.com/rbishop85/toTask",
+        "live": "https://to-task-app.herokuapp.com/"
+    },
+    {
+        "id": 2,
         "title": "Whisky Journal",
         "description": "Full-stack group project creating a journal for a user to record details about their favorite scotch whiskies",
         "image": whiskyImage,
@@ -16,7 +24,7 @@ const data = [
         "live": "https://whisky-journal.herokuapp.com/"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Quote Me Senpai",
         "description": "Group Project utilizing third-party api requests to generate anime quotes",
         "image": quoteImage,
@@ -24,7 +32,7 @@ const data = [
         "live": "https://rbishop85.github.io/quote-me-senpai/"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Tech Blog",
         "description": "Full-stack project building a usable tech blog",
         "image": blogImage,
@@ -32,7 +40,7 @@ const data = [
         "live": "https://rb-hw14-tech-blog.herokuapp.com/"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Work Day Scheduler",
         "description": "Single day task tracker",
         "image": schedulerImage,
@@ -40,20 +48,12 @@ const data = [
         "live": "https://rbishop85.github.io/work-day-scheduler/"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Note Taker",
         "description": "Takes notes and stores on a server-based json file",
         "image": noteImage,
         "repo": "https://github.com/rbishop85/note-taker",
         "live": "https://rb-hw11-note-taker.herokuapp.com/"
-    },
-    {
-        "id": 6,
-        "title": "Weather Dashboard",
-        "description": "Uses a third-party api to search weather",
-        "image": weatherImage,
-        "repo": "https://github.com/rbishop85/weather-dashboard",
-        "live": "https://rbishop85.github.io/weather-dashboard/"
     },
 
 ];

@@ -5,7 +5,7 @@ import GitHubCalendar from "react-github-calendar";
 // Pulling in icons for my list of tools
 import { SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiExpress, SiReact, SiMysql, SiMongodb } from 'react-icons/si'
 
-import selfImage from '../../assets/images/me.jpg'
+import selfImage from '../assets/images/me.jpg'
 
 // Some in-line styling for objects
 const styles = {

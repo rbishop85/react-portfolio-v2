@@ -16,7 +16,7 @@ const styles = {
     }
   };
 
-export default function Header({ handlePageChange }) {
+export default function Header() {
   return (
     <Grid container spacing={2} style={styles.header}>
       <Grid item xs={12} md={3}>
@@ -24,7 +24,7 @@ export default function Header({ handlePageChange }) {
       </Grid>
       <Grid item xs={12} md={6}>
         {/* Load navigation component */}
-        <Navigation handlePageChange={handlePageChange} />
+        <Navigation />
       </Grid>
     </Grid>
   );

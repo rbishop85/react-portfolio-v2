@@ -4,7 +4,7 @@ import { Grid } from '@mui/material';
 import Button from '@mui/material/Button';
 
 // Store pdf of resume in variable
-import pdf from '../../assets/pdf/resume.pdf';
+import pdf from '../assets/pdf/resume.pdf';
 
 // In-line styling
 const styles = {

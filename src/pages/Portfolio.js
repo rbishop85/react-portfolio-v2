@@ -1,9 +1,9 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 
-import Project from "../Project"
+import Project from "../components/Project"
 // Pull in data on projects to be displayed
-import data from '../Project.data';
+import data from '../assets/data/Project.data';
 
 // In-line styling
 const styles = {
