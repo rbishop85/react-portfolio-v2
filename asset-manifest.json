@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-portfolio-v2/static/css/main.d53e2cfb.css",
+    "main.js": "/react-portfolio-v2/static/js/main.3a71a7bd.js",
+    "static/media/resume.pdf": "/react-portfolio-v2/static/media/resume.e630e84621a39b5917a0.pdf",
+    "static/media/whiskyjournal.jpg": "/react-portfolio-v2/static/media/whiskyjournal.303a9d5640a48dc3b362.jpg",
+    "static/media/me.jpg": "/react-portfolio-v2/static/media/me.91aa5191451a6bd81581.jpg",
+    "static/media/quoteme.jpg": "/react-portfolio-v2/static/media/quoteme.7fd79b0e1f01bbc97d98.jpg",
+    "static/media/totask.jpg": "/react-portfolio-v2/static/media/totask.d81c2a652f294f7a82fb.jpg",
+    "static/media/techblog.jpg": "/react-portfolio-v2/static/media/techblog.d6b66b4b08b4ceab00ea.jpg",
+    "static/media/scheduler.jpg": "/react-portfolio-v2/static/media/scheduler.3ed1d30c391c3f5209f7.jpg",
+    "static/media/notetaker.jpg": "/react-portfolio-v2/static/media/notetaker.caee020d2d6392495d32.jpg",
+    "index.html": "/react-portfolio-v2/index.html",
+    "main.d53e2cfb.css.map": "/react-portfolio-v2/static/css/main.d53e2cfb.css.map",
+    "main.3a71a7bd.js.map": "/react-portfolio-v2/static/js/main.3a71a7bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d53e2cfb.css",
+    "static/js/main.3a71a7bd.js"
+  ]
+}
