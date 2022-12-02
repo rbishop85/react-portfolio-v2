@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rbishop85.github.io/react-portfolio",
+  "homepage": "https://rbishop85.github.io/react-portfolio-v2",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",

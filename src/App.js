@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Switch } from 'react-router-dom';
 import { Container } from "@mui/material";
 
 // Importing Components
@@ -26,11 +26,25 @@ function App() {
                 <Container  maxWidth="lg">
                     <Header currentTab={currentTab} setCurrentTab={setCurrentTab} />
                     <Routes>
-                        <Route path="/" element={<About setCurrentTab={setCurrentTab} />} />
+                        <Route exact path="/" element={<About setCurrentTab={setCurrentTab} />} />
                         <Route path="/portfolio" element={<Portfolio setCurrentTab={setCurrentTab} />} />
                         <Route path="/contact" element={<Contact setCurrentTab={setCurrentTab} />} />
                         <Route path="/resume" element={<Resume setCurrentTab={setCurrentTab} />} />
                     </Routes>
+                    {/* <Routes>
+                        <Route exact path="/">
+                            <About setCurrentTab={setCurrentTab} />
+                        </Route>
+                        <Route path="/portfolio">
+                            <Portfolio setCurrentTab={setCurrentTab} />
+                        </Route>
+                        <Route path="/contact">
+                            <Contact setCurrentTab={setCurrentTab} />
+                        </Route>
+                        <Route path="/resume">
+                            <Resume setCurrentTab={setCurrentTab} />
+                        </Route>
+                    </Routes> */}
                     <Footer />
                 </Container>
             </Router>
