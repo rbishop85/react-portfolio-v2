@@ -16,6 +16,18 @@
     width: 100%;
 }
 
+.header {
+    overflow: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #00AD99;
+}
+
+.title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 body {
     margin: 0
 }
