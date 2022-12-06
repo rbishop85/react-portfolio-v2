@@ -31,20 +31,6 @@ function App() {
                         <Route path="/contact" element={<Contact setCurrentTab={setCurrentTab} />} />
                         <Route path="/resume" element={<Resume setCurrentTab={setCurrentTab} />} />
                     </Routes>
-                    {/* <Routes>
-                        <Route exact path="/">
-                            <About setCurrentTab={setCurrentTab} />
-                        </Route>
-                        <Route path="/portfolio">
-                            <Portfolio setCurrentTab={setCurrentTab} />
-                        </Route>
-                        <Route path="/contact">
-                            <Contact setCurrentTab={setCurrentTab} />
-                        </Route>
-                        <Route path="/resume">
-                            <Resume setCurrentTab={setCurrentTab} />
-                        </Route>
-                    </Routes> */}
                     <Footer />
                 </Container>
             </Router>
