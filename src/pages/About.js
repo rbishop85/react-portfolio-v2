@@ -7,34 +7,16 @@ import { SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiExpress, SiReact, SiMysql
 
 import selfImage from '../assets/images/me.jpg'
 
-// Some in-line styling for objects
-const styles = {
-  section: {
-    marginTop: 40,
-    textAlign: "center"
-  },
-  image: {
-    borderRadius: 100,
-    border: "3px solid #007b6d",
-  },
-  divider: {
-    borderTop: "3px solid #007b6d",
-    marginTop: 20,
-    marginBottom: 20,
-    width: "100%"
-  }
-};
-
 export default function About({ setCurrentTab }) {
 
   // Ensures that if site is loaded directly to this page that the proper tab will bet highlighted
   setCurrentTab("about")
 
   return (
-    <div style={styles.section} className="about">
+    <div className="about">
       <Grid container direction="column" alignItems="center">
         {/* Picture of me */}
-      <img src={selfImage} alt="Me in front of some trees" height="300px" style={styles.image} />
+      <img src={selfImage} alt="Me in front of some trees" className="image"/>
       
       {/* Brief section talking about myself */}
       <h2>About Me</h2>
@@ -50,7 +32,7 @@ export default function About({ setCurrentTab }) {
       <p>
         I'm looking forward to opportunities to both test and prove my capabilities, as well as simply learn new things.
       </p>
-      <div style={styles.divider} />
+      <div className="divider" />
       {/* Icons and descriptions for languages I'm trained in */}
       <h2>My Tools</h2>
       <Grid container justifyContents="center" xs={10} md={6}>
@@ -88,7 +70,7 @@ export default function About({ setCurrentTab }) {
         </Grid>
 
       </Grid>
-      <div style={styles.divider} />
+      <div className="divider" />
       <h2>Coding Activity</h2>
       <GitHubCalendar
       // Configuration for github commit calendar display
