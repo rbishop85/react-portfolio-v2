@@ -4,21 +4,7 @@ import { Grid } from '@mui/material';
 import Button from '@mui/material/Button';
 
 // Store pdf of resume in variable
-import pdf from '../assets/pdf/resume.pdf';
-
-// In-line styling
-const styles = {
-  section: {
-    marginTop: 40,
-  },
-  spaceSide: {
-    marginLeft: 10,
-    marginRight: 10,
-  },
-  spaceTop: {
-    marginTop: 30
-  }
-};
+import pdf from '../assets/pdf/resume2.pdf';
 
 export default function Resume({ setCurrentTab }) {
 
@@ -36,13 +22,13 @@ export default function Resume({ setCurrentTab }) {
   }
 
   return (
-    <Grid container direction="column" alignItems="center" style={styles.section}>
+    <Grid container direction="column" alignItems="center" className="resume">
       <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} />
       </Document>
       {/* If pdf has more than 1 page, load the buttons used to transition pages */}
       {numPages > 1 &&
-        <Grid container justifyContent="center" style={styles.spaceTop}>
+        <Grid container justifyContent="center" className="pages">
           <Button
             variant="contained"
             onClick={() => {
@@ -55,7 +41,7 @@ export default function Resume({ setCurrentTab }) {
             Previous
           </Button>
           {/* Display current page number */}
-          <p style={styles.spaceSide}>
+          <p>
             Page {pageNumber} of {numPages}
           </p>
           <Button
