@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-portfolio-v2/static/css/main.0a2066e3.css",
+    "main.css": "/react-portfolio-v2/static/css/main.64955c8c.css",
     "main.js": "/react-portfolio-v2/static/js/main.3dfd1def.js",
     "static/media/resume2.pdf": "/react-portfolio-v2/static/media/resume2.a9aefb5c05b589199a87.pdf",
     "static/media/whiskyjournal.jpg": "/react-portfolio-v2/static/media/whiskyjournal.303a9d5640a48dc3b362.jpg",
@@ -11,11 +11,11 @@
     "static/media/scheduler.jpg": "/react-portfolio-v2/static/media/scheduler.3ed1d30c391c3f5209f7.jpg",
     "static/media/notetaker.jpg": "/react-portfolio-v2/static/media/notetaker.caee020d2d6392495d32.jpg",
     "index.html": "/react-portfolio-v2/index.html",
-    "main.0a2066e3.css.map": "/react-portfolio-v2/static/css/main.0a2066e3.css.map",
+    "main.64955c8c.css.map": "/react-portfolio-v2/static/css/main.64955c8c.css.map",
     "main.3dfd1def.js.map": "/react-portfolio-v2/static/js/main.3dfd1def.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a2066e3.css",
+    "static/css/main.64955c8c.css",
     "static/js/main.3dfd1def.js"
   ]
 }
