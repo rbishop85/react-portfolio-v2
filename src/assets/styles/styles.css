@@ -95,6 +95,30 @@ body {
     padding: 10px;
 }
 
+.contact .title {
+    text-align: center;
+}
+
+.contact .form {
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.70);
+}
+
+/* Manually adjusting colors for MUI text box field */
+.contact .MuiInputBase-root {
+    color: #D3D3D3;
+}
+
+.contact .MuiFormLabel-root, .contact .MuiFormLabel-root.Mui-focused {
+    color: #00AD99;
+}
+
+.contact .MuiOutlinedInput-root fieldset, .contact .MuiOutlinedInput-root:hover fieldset, .contact .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: #00AD99;
+}
+
 .footer h3 {
     font-size: 30px;
 }
