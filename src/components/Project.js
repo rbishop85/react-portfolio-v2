@@ -5,37 +5,18 @@ import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 
-// In-line styling
-const styles = {
-    box: {
-      border: "3px solid #007b6d",
-      backgroundColor: "#000000",
-      color: "#D3D3D3"
-    }
-  };
-
   // Page layout for each individual project
 export default function Project({ id, title, description, image, repo, live }) {
   return (
     <Grid item xs={10} md={6} key={id} className="project">
-      <Card style={styles.box}>
-        <Box sx={{ position: 'relative' }}>
+      <Card className="card">
+        <Box className="box">
           <CardMedia
             component="img"
             height="100%"
             image={image}
           />
-          <Box
-            sx={{
-              position: 'absolute',
-              bottom: "0%",
-              left: 0,
-              width: '100%',
-              bgcolor: 'rgba(0, 0, 0, 0.70)',
-              color: '#D3D3D3',
-              padding: '10px',
-            }}
-          >
+          <Box className="details">
             <Typography variant="h5">{title}</Typography>
             <Typography variant="body2">{description}</Typography>
 

@@ -27,7 +27,7 @@ body {
     border-bottom: 3px solid #00AD99;
 }
 
-.title {
+.header .title {
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -69,6 +69,30 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
+}
+
+.portfolio .title {
+    text-align: center;
+}
+
+.project .card {
+    border: 3px solid #00AD99;
+    background-color: #000000;
+    color: #D3D3D3;
+}
+
+.project .box {
+    position: relative;
+}
+
+.project .details {
+    position: absolute;
+    bottom: 0%;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.70);
+    color: #D3D3D3;
+    padding: 10px;
 }
 
 .footer h3 {
