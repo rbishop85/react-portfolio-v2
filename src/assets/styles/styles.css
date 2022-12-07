@@ -43,6 +43,7 @@ body {
     font-weight: 700;
     padding-left: 0px;
     padding-right: 0px;
+    opacity: 1;
 }
 
 .MuiButtonBase-root.Mui-selected {
