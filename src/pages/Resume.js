@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import { Grid } from '@mui/material';
+import { Grid, Container } from '@mui/material';
 import Button from '@mui/material/Button';
 
 // Store pdf of resume in variable
@@ -22,8 +22,9 @@ export default function Resume({ setCurrentTab }) {
   }
 
   return (
+    <Container>
     <Grid container direction="column" alignItems="center" className="resume">
-      <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
+      <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess} xs={12}>
         <Page pageNumber={pageNumber} />
       </Document>
       {/* If pdf has more than 1 page, load the buttons used to transition pages */}
@@ -61,5 +62,6 @@ export default function Resume({ setCurrentTab }) {
       {/* Button to download copy of resume */}
       <Button variant="outlined" href={pdf} download>Download</Button>
     </Grid>
+    </Container>
   );
 }

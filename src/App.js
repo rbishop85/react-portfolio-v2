@@ -25,7 +25,7 @@ function App() {
             <Router>
                 <Container  maxWidth="lg">
                     <Header currentTab={currentTab} setCurrentTab={setCurrentTab} />
-                    <Routes>
+                    <Routes className="content">
                         <Route exact path="/" element={<About setCurrentTab={setCurrentTab} />} />
                         <Route path="/portfolio" element={<Portfolio setCurrentTab={setCurrentTab} />} />
                         <Route path="/contact" element={<Contact setCurrentTab={setCurrentTab} />} />

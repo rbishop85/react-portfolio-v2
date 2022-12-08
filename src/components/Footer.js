@@ -12,12 +12,12 @@ export default function Footer() {
       </a>
       </Grid>
       <Grid item>
-      <a href="https://github.com/rbishop85/" target="_blank">
+      <a href="https://github.com/rbishop85/" target="_blank" rel="noreferrer">
         <h3><GrGithub /></h3>
       </a>
       </Grid>
       <Grid item>
-      <a href="https://www.linkedin.com/in/robert-m-bishop/" target="_blank">
+      <a href="https://www.linkedin.com/in/robert-m-bishop/" target="_blank" rel="noreferrer">
         <h3><GrLinkedin /></h3>
       </a>
       </Grid>

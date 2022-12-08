@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@mui/material';
+import { Grid, Container } from '@mui/material';
 
 import Project from "../components/Project"
 // Pull in data on projects to be displayed
@@ -12,6 +12,7 @@ export default function Portfolio({ setCurrentTab }) {
 
   return (
     <div className="portfolio">
+      <Container>
       <h2 className="title">My Projects:</h2>
       <Grid container spacing={2} justifyContent="center">
         {/* Go through list of projetcs and map them each to their own Project component */}
@@ -26,6 +27,7 @@ export default function Portfolio({ setCurrentTab }) {
           />
         ))}
       </Grid>
+      </Container>
     </div>
   );
 }

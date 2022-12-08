@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
+import { Grid, Container } from "@mui/material";
 
 const Contact = ({ setCurrentTab }) => {
 
@@ -22,6 +22,7 @@ const Contact = ({ setCurrentTab }) => {
   };
 
   return (
+    <Container>
     <Grid container justifyContent="center" className="contact">
       <Grid item xs={10} md={6}>
         <h2 className="title">Contact Me:</h2>
@@ -66,6 +67,7 @@ const Contact = ({ setCurrentTab }) => {
         </form>
       </Grid>
     </Grid>
+    </Container>
   );
 };
 

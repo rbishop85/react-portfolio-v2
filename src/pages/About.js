@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@mui/material';
+import { Grid, Container } from '@mui/material';
 // Pulling in npm for displaying my github calendar
 import GitHubCalendar from "react-github-calendar";
 // Pulling in icons for my list of tools
@@ -14,6 +14,7 @@ export default function About({ setCurrentTab }) {
 
   return (
     <div className="about">
+      <Container>
       <Grid container direction="column" alignItems="center">
         {/* Picture of me */}
       <img src={selfImage} alt="Me in front of some trees" className="image"/>
@@ -80,6 +81,7 @@ export default function About({ setCurrentTab }) {
         fontSize={16}
       />
       </Grid>
+      </Container>
     </div>
   );
 }
