@@ -18,8 +18,8 @@ export default function Resume({ setCurrentTab }) {
     <Container>
     <Grid container direction="column" alignItems="center">
       {/* Icons and descriptions for languages I'm trained in */}
-      <h2>My Tools</h2>
-      <Grid container justifyContents="center" xs={10} md={6}>
+      <h2>My Tools:</h2>
+      <Grid container justifyContents="center" xs={11} md={6}>
         <Grid container direction="column" alignItems="center" justifyContent="space-between" xs={3} className="tool">
           <SiHtml5 className="ToolIcon" />
           HTML5
@@ -53,7 +53,37 @@ export default function Resume({ setCurrentTab }) {
           MongoDB
         </Grid>
       </Grid>
-      <p>Education:</p>
+
+      <h2>Education:</h2>
+      <Grid container xs={12} sm={10} md={8}>
+        <Grid xs={12} md={9} className="left">
+          Certificate in Full Stack Web Development
+        </Grid>
+        <Grid xs={12} md={3} className="right">
+          November, 2022
+        </Grid>
+        <Grid xs={12} md={6} className="left">
+          University of Washington
+        </Grid>
+        <Grid xs={12} md={6} className="right">
+          Seattle, WA
+        </Grid>
+      </Grid>
+      <Grid container xs={12} sm={10} md={8}>
+        <Grid xs={12} md={9} className="left">
+          Associate of Science in Computer Networking & Information Tech.
+        </Grid>
+        <Grid xs={12} md={3} className="right">
+          December, 2004
+        </Grid>
+        <Grid xs={12} md={6} className="left">
+          High-Tech Institute
+        </Grid>
+        <Grid xs={12} md={6} className="right">
+          Phoenix, AZ
+        </Grid>
+      </Grid>             
+
       <p>Work History:</p>
       {/* Button to download copy of resume */}
       <Button variant="outlined" href={pdf} download>Download Resume</Button>

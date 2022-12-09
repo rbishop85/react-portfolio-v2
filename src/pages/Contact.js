@@ -22,52 +22,54 @@ const Contact = ({ setCurrentTab }) => {
   };
 
   return (
-    <Container>
-    <Grid container justifyContent="center" className="contact">
-      <Grid item xs={10} md={6}>
-        <h2 className="title">Contact Me:</h2>
-        <form className="form" onSubmit={handleSubmit} autoComplete="off">
-          <Grid container direction="column" alignItems="center">
-            <TextField
-              required
-              id="contactName"
-              label="Name"
-              variant="outlined"
-              margin="normal"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              style={{ width: "80%" }}
-            />
-            <TextField
-              required
-              id="contactEmail"
-              label="E-Mail"
-              variant="outlined"
-              margin="normal"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              style={{ width: "80%" }}
-            />
-            <TextField
-              required
-              id="contactMessage"
-              label="Message"
-              variant="outlined"
-              margin="normal"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              multiline
-              rows={6}
-              style={{ width: "80%" }}
-            />
-            <Button variant="contained" type="submit">
-              Submit
-            </Button>
+    <div className="contact">
+      <Container>
+        <Grid container justifyContent="center">
+          <Grid item xs={10} md={6}>
+            <h2 className="title">Contact Me:</h2>
+            <form className="form" onSubmit={handleSubmit} autoComplete="off">
+              <Grid container direction="column" alignItems="center">
+                <TextField
+                  required
+                  id="contactName"
+                  label="Name"
+                  variant="outlined"
+                  margin="normal"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  style={{ width: "80%" }}
+                />
+                <TextField
+                  required
+                  id="contactEmail"
+                  label="E-Mail"
+                  variant="outlined"
+                  margin="normal"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  style={{ width: "80%" }}
+                />
+                <TextField
+                  required
+                  id="contactMessage"
+                  label="Message"
+                  variant="outlined"
+                  margin="normal"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  multiline
+                  rows={6}
+                  style={{ width: "80%" }}
+                />
+                <Button variant="contained" type="submit">
+                  Submit
+                </Button>
+              </Grid>
+            </form>
           </Grid>
-        </form>
-      </Grid>
-    </Grid>
-    </Container>
+        </Grid>
+      </Container>
+    </div>
   );
 };
 
