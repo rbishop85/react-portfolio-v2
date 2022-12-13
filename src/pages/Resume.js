@@ -56,35 +56,49 @@ export default function Resume({ setCurrentTab }) {
 
       <h2>Education:</h2>
       <Grid container xs={12} sm={10} md={8}>
-        <Grid xs={12} md={9} className="left">
-          Certificate in Full Stack Web Development
-        </Grid>
-        <Grid xs={12} md={3} className="right">
-          November, 2022
-        </Grid>
-        <Grid xs={12} md={6} className="left">
-          University of Washington
-        </Grid>
-        <Grid xs={12} md={6} className="right">
-          Seattle, WA
-        </Grid>
+        <div class="education left">
+          <ul>
+            <li>
+              <div class="date">November, 2022</div> 
+              <div class="info">
+                <p>University of Washington - Seattle, WA</p> 
+                <p>Certificate in Full Stack Web Development</p>
+              </div>
+            </li>
+            <li>
+              <div class="date">December, 2004</div>
+              <div class="info">
+                <p>High-Tech Institute - Phoenix, AZ</p> 
+                <p>Associate of Science in Computer Networking & Information Tech</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </Grid>
-      <Grid container xs={12} sm={10} md={8}>
-        <Grid xs={12} md={9} className="left">
-          Associate of Science in Computer Networking & Information Tech.
-        </Grid>
-        <Grid xs={12} md={3} className="right">
-          December, 2004
-        </Grid>
-        <Grid xs={12} md={6} className="left">
-          High-Tech Institute
-        </Grid>
-        <Grid xs={12} md={6} className="right">
-          Phoenix, AZ
-        </Grid>
-      </Grid>             
 
-      <p>Work History:</p>
+      <h2>Work Experience:</h2>
+      <Grid container xs={12} sm={10} md={8}>
+        <div class="work left">
+          <ul>
+            <li>
+              <div class="date">2011-Present</div> 
+              <div class="info">
+                <p>Kelley Connect (Merged from Michael Business Machines)</p>
+                <p>Bellingham, WA</p>
+                <p>Copier Service Technician</p>
+              </div>
+            </li>
+            <li>
+              <div class="date">2006-2011</div>
+              <div class="info">
+                <p>Absorption Corp. (now known as Healthy Pet)</p>
+                <p>Ferndale, WA</p>
+                <p>Graveyard Shift Second Lead</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </Grid>
       {/* Button to download copy of resume */}
       <Button variant="outlined" href={pdf} download>Download Resume</Button>
     </Grid>

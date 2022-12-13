@@ -172,6 +172,54 @@ body {
 .resume .right {
     text-align: right;
 }
+  
+.resume .work ul,
+.resume .education ul {
+padding-left: 40px;
+overflow: hidden;
+list-style: none;
+}
+
+.resume ul li {
+position: relative;
+}
+
+.resume ul li .date {
+margin-bottom: 15px;
+}
+
+.resume ul li .info {
+margin-bottom: 20px;
+}
+
+.resume ul li p {
+margin: 0;
+padding: 0;
+}
+
+.resume .work ul li:before,
+.resume .education ul li:before {
+content: "";
+position: absolute;
+top: 5px;
+left: -25px;
+width: 6px;
+height: 6px;
+border-radius: 50%;
+border: 2px solid #00AD99;
+background-color: #00AD99;
+}
+
+.resume .work ul li:after,
+.resume .education ul li:after {
+content: "";
+position: absolute;
+top: 14px;
+left: -21px;
+width: 2px;
+height: 115px;
+background: #00AD99;
+}
 
 .tool {
     margin-bottom: 20px;
@@ -201,5 +249,5 @@ body {
 }
 
 .project a:link, .project a:visited, .project a:hover, .project a:active {
-    color: #007b6d;
+    color: #00AD99;
 }
