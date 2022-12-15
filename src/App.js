@@ -1,6 +1,7 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container } from "@mui/material";
+import { createContext, useState } from "react";
 
 // Importing Components
 import Header from "./components/Header";
@@ -14,27 +15,38 @@ import Resume from "./pages/Resume";
 // Loading in custom style sheet
 import "./assets/styles/styles.css";
 
+export const ThemeContext = createContext(null)
+
 // Main layer of app, everything else cascades down from here
 function App() {
 
+    // State info for tracking color theme
+    const [theme, setTheme] = useState("dark");
+
+    const toggleTheme = () => {
+        setTheme((curr) => (curr === "light" ? "dark" : "light"));
+    };
+
     // State info for tracking current tab
-    const [currentTab, setCurrentTab] = React.useState('about');
+    const [currentTab, setCurrentTab] = useState('about');
 
     return (
-        <div className="app">
-            <Router>
-                <Container  maxWidth="lg">
-                    <Header currentTab={currentTab} setCurrentTab={setCurrentTab} />
-                    <Routes className="content">
-                        <Route exact path="/" element={<About setCurrentTab={setCurrentTab} />} />
-                        <Route path="/portfolio" element={<Portfolio setCurrentTab={setCurrentTab} />} />
-                        <Route path="/contact" element={<Contact setCurrentTab={setCurrentTab} />} />
-                        <Route path="/resume" element={<Resume setCurrentTab={setCurrentTab} />} />
-                    </Routes>
-                    <Footer />
-                </Container>
-            </Router>
-        </div>
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+            <div className="app" id={theme}>
+                <Router>
+                    <Container  maxWidth="lg">
+                        <Header currentTab={currentTab} setCurrentTab={setCurrentTab} toggleTheme={toggleTheme} theme={theme} />
+                        <Routes className="content">
+                            <Route exact path="/" element={<About setCurrentTab={setCurrentTab} />} />
+                            <Route path="/portfolio" element={<Portfolio setCurrentTab={setCurrentTab} />} />
+                            <Route path="/contact" element={<Contact setCurrentTab={setCurrentTab} />} />
+                            <Route path="/resume" element={<Resume setCurrentTab={setCurrentTab} />} />
+                        </Routes>
+                        <Footer />
+                    </Container>
+                </Router>
+            </div>
+        </ThemeContext.Provider>
     );
 }
 
