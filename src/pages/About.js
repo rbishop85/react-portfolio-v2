@@ -18,7 +18,6 @@ export default function About({ setCurrentTab }) {
           <img src={selfImage} alt="Me in front of some trees" className="image"/>
         
           {/* Brief section talking about myself */}
-          <h2>About Me</h2>
           <p>
             My name is Robert Bishop and I'm a Full-Stack Developer recently graduated from the Web Coding Bootcamp run by the University of Washington. I've had an interest in computers going back to when I started tinkering with my personal computer in high school. After high school I pursued an Associates program in computer networking through a tech college in Arizona before returning to my home in the PNW.
           </p>

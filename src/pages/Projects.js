@@ -13,20 +13,19 @@ export default function Projects({ setCurrentTab }) {
   return (
     <div className="projects">
       <Container>
-      <h2 className="title">My Projects:</h2>
-      <Grid container spacing={2} justifyContent="center">
-        {/* Go through list of projetcs and map them each to their own Project component */}
-        {data.map(({ id, title, description, image, repo, live }) => (
-          <Project
-            id={id}
-            title={title}
-            description={description}
-            image={image}
-            repo={repo}
-            live={live}
-          />
-        ))}
-      </Grid>
+        <Grid container spacing={2} justifyContent="center">
+          {/* Go through list of projects and map them each to their own Project component */}
+          {data.map(({ id, title, description, image, repo, live }) => (
+            <Project
+              id={id}
+              title={title}
+              description={description}
+              image={image}
+              repo={repo}
+              live={live}
+            />
+          ))}
+        </Grid>
       </Container>
     </div>
   );
