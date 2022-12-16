@@ -144,7 +144,7 @@ body {
     border-top: 3px solid var(--lmprim);
 }
 
-.portfolio {
+.projects {
     position: absolute;
     top: 125px;
     bottom: 55px;
@@ -154,7 +154,7 @@ body {
     transform: translateX(-50%);
 }
 
-.portfolio .title {
+.projects .title {
     text-align: center;
 }
 

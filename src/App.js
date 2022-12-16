@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 // Importing Pages
 import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
+import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
@@ -38,7 +38,7 @@ function App() {
                         <Header currentTab={currentTab} setCurrentTab={setCurrentTab} toggleTheme={toggleTheme} theme={theme} />
                         <Routes className="content">
                             <Route exact path="/" element={<About setCurrentTab={setCurrentTab} />} />
-                            <Route path="/portfolio" element={<Portfolio setCurrentTab={setCurrentTab} />} />
+                            <Route path="/projects" element={<Projects setCurrentTab={setCurrentTab} />} />
                             <Route path="/contact" element={<Contact setCurrentTab={setCurrentTab} />} />
                             <Route path="/resume" element={<Resume setCurrentTab={setCurrentTab} />} />
                         </Routes>
