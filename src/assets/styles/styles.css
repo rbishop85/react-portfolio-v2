@@ -3,11 +3,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* Dark Mode Color Palette */
     --dmbg: #000000;
     --dmprim: #00AD99;
     --dmhl: #D3D3D3;
     --dmtransp: #000000b3;
-
+    /* Light Mode Color Palette */
     --lmbg: #FFFFFF;
     --lmprim: #000000;
     --lmhl: #00AD99;
@@ -43,6 +44,12 @@ body {
     padding-top: 25px;
     padding-bottom: 10px;
 }
+
+.app .MuiContainer-root {
+    box-sizing: content-box;
+}
+
+
 
 #dark .header {
     border-bottom: 3px solid var(--dmprim);
@@ -100,11 +107,11 @@ body {
 }
 
 #dark .MuiTabs-indicator {
-    background-color: var(--dmhl) !important;
+    background-color: var(--dmhl);
 }
 
 #light .MuiTabs-indicator {
-    background-color: var(--lmhl) !important;
+    background-color: var(--lmhl);
 }
 
 .about {
@@ -343,10 +350,11 @@ background: var(--lmprim);
     position: absolute;
     overflow: hidden;
     bottom: 0;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
     height: 55px;
+}
 
+.app .css-83r440-MuiGrid-root {
+    margin-left: -8px;
 }
 
 #dark .footer {
