@@ -1,7 +1,5 @@
 import React from 'react';
 import { Grid, Container } from '@mui/material';
-// Pulling in npm for displaying my github calendar
-import GitHubCalendar from "react-github-calendar";
 
 import selfImage from '../assets/images/me.jpg'
 
@@ -30,15 +28,6 @@ export default function About({ setCurrentTab }) {
           <p>
             I'm looking forward to opportunities to both test and prove my capabilities, as well as simply learn new things.
           </p>
-          <div className="divider" />
-          <h2>Coding Activity</h2>
-          <GitHubCalendar
-          // Configuration for github commit calendar display
-            username="rbishop85"
-            blockSize={15}
-            blockMargin={5}
-            fontSize={16}
-          />
         </Grid>
       </Container>
     </div>

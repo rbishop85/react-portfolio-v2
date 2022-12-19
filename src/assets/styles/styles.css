@@ -139,20 +139,6 @@ body {
     border: 3px solid var(--lmprim);
 }
 
-.about .divider {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-#dark .about .divider {
-    border-top: 3px solid var(--dmprim);
-}
-
-#light .about .divider {
-    border-top: 3px solid var(--lmprim);
-}
-
 .projects {
     position: absolute;
     top: 125px;
@@ -161,6 +147,20 @@ body {
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.projects .divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#dark .projects .divider {
+    border-top: 3px solid var(--dmprim);
+}
+
+#light .projects .divider {
+    border-top: 3px solid var(--lmprim);
 }
 
 #dark .project .card {
