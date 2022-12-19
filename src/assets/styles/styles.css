@@ -68,7 +68,9 @@ body {
     align-items: center;
 }
 
-
+.header .switch label {
+    margin-right: 10px;
+}
 
 .header .MuiGrid-root.MuiGrid-item {
     padding-top: 0px;
