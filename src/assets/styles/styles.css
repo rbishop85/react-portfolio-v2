@@ -45,6 +45,11 @@ body {
     padding-bottom: 10px;
 }
 
+.app .css-mhc70k-MuiGrid-root {
+    width: 100%;
+    margin-left: -8px;
+}
+
 .app .MuiContainer-root {
     box-sizing: content-box;
 }

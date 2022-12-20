@@ -3,7 +3,7 @@ import { Grid, Container } from '@mui/material';
 // Pulling in npm for displaying my github calendar
 import GitHubCalendar from "react-github-calendar";
 
-import Project from "../components/Project"
+import Project from "../components/Project";
 // Pull in data on projects to be displayed
 import data from '../assets/data/Project.data';
 
