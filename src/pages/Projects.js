@@ -14,7 +14,7 @@ export default function Projects({ setCurrentTab }) {
 
   return (
     <div className="projects">
-      <Container>
+      <Container disableGutters>
         <Grid container spacing={2} justifyContent="center">
           {/* Go through list of projects and map them each to their own Project component */}
           {data.map(({ id, title, description, image, repo, live }) => (

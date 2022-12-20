@@ -34,7 +34,7 @@ function App() {
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
             <div className="app" id={theme}>
                 <Router>
-                    <Container  maxWidth="lg">
+                    <Container disableGutters maxWidth="lg">
                         <Header currentTab={currentTab} setCurrentTab={setCurrentTab} toggleTheme={toggleTheme} theme={theme} />
                         <Routes className="content">
                             <Route exact path="/" element={<About setCurrentTab={setCurrentTab} />} />

@@ -23,7 +23,7 @@ const Contact = ({ setCurrentTab }) => {
 
   return (
     <div className="contact">
-      <Container>
+      <Container disableGutters>
         <Grid container justifyContent="center">
           <Grid item xs={10} md={6}>
             <h2 className="title">Contact Me:</h2>

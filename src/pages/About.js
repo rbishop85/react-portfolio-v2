@@ -10,7 +10,7 @@ export default function About({ setCurrentTab }) {
 
   return (
     <div className="about">
-      <Container>
+      <Container disableGutters>
         <Grid container direction="column" alignItems="center">
           {/* Picture of me */}
           <img src={selfImage} alt="Me in front of some trees" className="image"/>
