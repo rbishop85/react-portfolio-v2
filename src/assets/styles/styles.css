@@ -179,7 +179,7 @@ body {
     color: var(--dmhl);
 }
 
-#dark .project .card {
+#light .project .card {
     border: 3px solid var(--lmprim);
     background-color: var(--lmbg);
     color: var(--lmhl);
