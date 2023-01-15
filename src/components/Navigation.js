@@ -10,7 +10,7 @@ function Navigation({ currentTab, setCurrentTab }) {
     setCurrentTab(newValue);
   };
 
-  const routes = ["/", "/projects", "/contact", "/resume"]
+  const routes = ["/", "/projects", "/resume"]
 
   return (
     <Box className="navigation">
@@ -35,16 +35,10 @@ function Navigation({ currentTab, setCurrentTab }) {
           to={routes[1]}
         />
         <Tab 
-          value="contact" 
-          label="Contact"
-          component={Link}
-          to={routes[2]}
-        />
-        <Tab 
           value="resume" 
           label="Resume"
           component={Link}
-          to={routes[3]}
+          to={routes[2]}
         />
       </Tabs>
     </Box>

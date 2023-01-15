@@ -207,59 +207,6 @@ body {
     color: var(--lmhl);
 }
 
-.contact {
-    position: absolute;
-    top: 125px;
-    bottom: 65px;
-    overflow: auto;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.contact .title {
-    text-align: center;
-}
-
-.contact .form {
-    border: 2px solid;
-    border-radius: 4px;
-    padding: 12px;
-}
-
-#dark .contact .form {
-    background-color: var(--dmtransp);    
-}
-
-#light .contact .form {
-    background-color: var(--lmtransp);    
-}
-
-/* Manually adjusting colors for MUI text box field */
-#dark .contact .MuiInputBase-root {
-    color: var(--dmhl);
-}
-
-#light .contact .MuiInputBase-root {
-    color: var(--lmhl);
-}
-
-#dark .contact .MuiFormLabel-root, .contact .MuiFormLabel-root.Mui-focused {
-    color: var(--dmprim);
-}
-
-#light .contact .MuiFormLabel-root, .contact .MuiFormLabel-root.Mui-focused {
-    color: var(--lmprim);
-}
-
-#dark .contact .MuiOutlinedInput-root fieldset, .contact .MuiOutlinedInput-root:hover fieldset, .contact .MuiOutlinedInput-root.Mui-focused fieldset {
-    border-color: var(--dmprim);
-}
-
-#light .contact .MuiOutlinedInput-root fieldset, .contact .MuiOutlinedInput-root:hover fieldset, .contact .MuiOutlinedInput-root.Mui-focused fieldset {
-    border-color: var(--lmprim);
-}
-
 .resume {
     margin-top: 40px;
     text-align: center;

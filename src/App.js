@@ -9,7 +9,6 @@ import Footer from "./components/Footer";
 // Importing Pages
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
 // Loading in custom style sheet
@@ -39,7 +38,6 @@ function App() {
                         <Routes className="content">
                             <Route exact path="/" element={<About setCurrentTab={setCurrentTab} />} />
                             <Route path="/projects" element={<Projects setCurrentTab={setCurrentTab} />} />
-                            <Route path="/contact" element={<Contact setCurrentTab={setCurrentTab} />} />
                             <Route path="/resume" element={<Resume setCurrentTab={setCurrentTab} />} />
                         </Routes>
                         <Footer />
