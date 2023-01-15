@@ -5,7 +5,7 @@ import Navigation from './Navigation';
 
 export default function Header({ currentTab, setCurrentTab, toggleTheme, theme }) {
   return (
-    <Grid container spacing={2} className="header">
+    <Grid container className="header">
       <Grid item xs={12}>
         <div className="titlebar">
           <div>

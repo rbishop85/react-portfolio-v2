@@ -54,6 +54,10 @@ body {
     box-sizing: content-box;
 }
 
+/* .header .MuiGrid-root.MuiGrid-item {
+    padding-left: 0;
+} */
+
 
 
 #dark .header {
@@ -356,6 +360,10 @@ background: var(--lmprim);
     overflow: hidden;
     bottom: 0;
     height: 55px;
+}
+
+.footer .MuiGrid-root.MuiGrid-item {
+    padding: 10px 20px 0px 20px;
 }
 
 .app .css-83r440-MuiGrid-root {
