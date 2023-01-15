@@ -3,7 +3,7 @@ import { Grid, Container } from '@mui/material';
 import Button from '@mui/material/Button';
 
 // Pulling in icons for my list of tools
-import { SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiExpress, SiReact, SiMysql, SiMongodb } from 'react-icons/si'
+import { SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiExpress, SiReact, SiMysql, SiMongodb, SiBootstrap, SiHandlebarsdotjs, SiGraphql, SiMaterialui } from 'react-icons/si'
 
 // Store pdf of resume in variable
 import pdf from '../assets/pdf/resume.pdf';
@@ -53,6 +53,22 @@ export default function Resume({ setCurrentTab }) {
           <Grid container direction="column" alignItems="center" justifyContent="space-between" xs={3} className="tool">
             <SiMongodb className="ToolIcon" />
             MongoDB
+          </Grid>
+          <Grid container direction="column" alignItems="center" justifyContent="space-between" xs={3} className="tool">
+            <SiBootstrap className="ToolIcon" />
+            Bootstrap
+          </Grid>
+          <Grid container direction="column" alignItems="center" justifyContent="space-between" xs={3} className="tool">
+            <SiHandlebarsdotjs className="ToolIcon" />
+            Handlebars
+          </Grid>
+          <Grid container direction="column" alignItems="center" justifyContent="space-between" xs={3} className="tool">
+            <SiGraphql className="ToolIcon" />
+            GraphQL
+          </Grid>
+          <Grid container direction="column" alignItems="center" justifyContent="space-between" xs={3} className="tool">
+            <SiMaterialui className="ToolIcon" />
+            Material UI
           </Grid>
         </Grid>
 
