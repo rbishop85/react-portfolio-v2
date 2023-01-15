@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-portfolio-v2/static/css/main.5d49e257.css",
-    "main.js": "/react-portfolio-v2/static/js/main.ec3703a3.js",
-    "static/media/resume2.pdf": "/react-portfolio-v2/static/media/resume2.a9aefb5c05b589199a87.pdf",
+    "main.css": "/react-portfolio-v2/static/css/main.b0c1e31a.css",
+    "main.js": "/react-portfolio-v2/static/js/main.cf883800.js",
+    "static/media/resume.pdf": "/react-portfolio-v2/static/media/resume.c6d3f48d88c6a5728c98.pdf",
     "static/media/whiskyjournal.jpg": "/react-portfolio-v2/static/media/whiskyjournal.303a9d5640a48dc3b362.jpg",
     "static/media/me.jpg": "/react-portfolio-v2/static/media/me.91aa5191451a6bd81581.jpg",
     "static/media/quoteme.jpg": "/react-portfolio-v2/static/media/quoteme.7fd79b0e1f01bbc97d98.jpg",
@@ -11,11 +11,11 @@
     "static/media/scheduler.jpg": "/react-portfolio-v2/static/media/scheduler.3ed1d30c391c3f5209f7.jpg",
     "static/media/notetaker.jpg": "/react-portfolio-v2/static/media/notetaker.caee020d2d6392495d32.jpg",
     "index.html": "/react-portfolio-v2/index.html",
-    "main.5d49e257.css.map": "/react-portfolio-v2/static/css/main.5d49e257.css.map",
-    "main.ec3703a3.js.map": "/react-portfolio-v2/static/js/main.ec3703a3.js.map"
+    "main.b0c1e31a.css.map": "/react-portfolio-v2/static/css/main.b0c1e31a.css.map",
+    "main.cf883800.js.map": "/react-portfolio-v2/static/js/main.cf883800.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d49e257.css",
-    "static/js/main.ec3703a3.js"
+    "static/css/main.b0c1e31a.css",
+    "static/js/main.cf883800.js"
   ]
 }
