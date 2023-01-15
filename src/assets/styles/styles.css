@@ -150,6 +150,7 @@ body {
 
 .projects {
     position: absolute;
+    padding-top: 40px;
     top: 125px;
     bottom: 65px;
     overflow: auto;
@@ -372,6 +373,10 @@ background: var(--lmprim);
 
 #dark .footer {
     border-top: 3px solid var(--dmprim);
+}
+
+#light .footer {
+    border-top: 3px solid var(--lmprim);
 }
 
 .footer h3 {
