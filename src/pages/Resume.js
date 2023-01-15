@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import { SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiExpress, SiReact, SiMysql, SiMongodb } from 'react-icons/si'
 
 // Store pdf of resume in variable
-import pdf from '../assets/pdf/resume2.pdf';
+import pdf from '../assets/pdf/resume.pdf';
 
 export default function Resume({ setCurrentTab }) {
 
@@ -17,6 +17,8 @@ export default function Resume({ setCurrentTab }) {
     <div className="resume">
     <Container disableGutters>
       <Grid container direction="column" alignItems="center">
+        {/* Button to download copy of resume */}
+        <Button variant="outlined" href={pdf} target="_blank">View/Download Resume</Button>
         {/* Icons and descriptions for languages I'm trained in */}
         <h2>My Tools:</h2>
         <Grid container justifyContents="center" xs={11} md={6}>
@@ -99,8 +101,6 @@ export default function Resume({ setCurrentTab }) {
             </ul>
           </div>
         </Grid>
-        {/* Button to download copy of resume */}
-        <Button variant="outlined" href={pdf} download>Download Resume</Button>
       </Grid>
     </Container>
     </div>
