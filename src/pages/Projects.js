@@ -17,11 +17,12 @@ export default function Projects({ setCurrentTab }) {
       <Container disableGutters>
         <Grid container spacing={2} justifyContent="center">
           {/* Go through list of projects and map them each to their own Project component */}
-          {data.map(({ id, title, description, image, repo, live }) => (
+          {data.map(({ id, title, description, group, image, repo, live }) => (
             <Project
               id={id}
               title={title}
               description={description}
+              group={group}
               image={image}
               repo={repo}
               live={live}

@@ -11,6 +11,7 @@ const data = [
         "id": 1,
         "title": "ToTask",
         "description": "Full-stack group project allowing user to find people to help them complete tasks",
+        "group": "Group",
         "image": totaskImage,
         "repo": "https://github.com/rbishop85/toTask",
         "live": "https://to-task-app.herokuapp.com/"
@@ -19,6 +20,7 @@ const data = [
         "id": 2,
         "title": "Whisky Journal",
         "description": "Full-stack group project creating a journal for a user to record details about their favorite scotch whiskies",
+        "group": "Group",
         "image": whiskyImage,
         "repo": "https://github.com/rbishop85/whiskey-journal",
         "live": "https://whisky-journal.herokuapp.com/"
@@ -27,6 +29,7 @@ const data = [
         "id": 3,
         "title": "Quote Me Senpai",
         "description": "Group Project utilizing third-party api requests to generate anime quotes",
+        "group": "Group",
         "image": quoteImage,
         "repo": "https://github.com/rbishop85/quote-me-senpai",
         "live": "https://rbishop85.github.io/quote-me-senpai/"
@@ -35,6 +38,7 @@ const data = [
         "id": 4,
         "title": "Tech Blog",
         "description": "Full-stack project building a usable tech blog",
+        "group": "Solo",
         "image": blogImage,
         "repo": "https://github.com/rbishop85/tech-blog",
         "live": "https://rb-hw14-tech-blog.herokuapp.com/"
@@ -43,6 +47,7 @@ const data = [
         "id": 5,
         "title": "Work Day Scheduler",
         "description": "Single day task tracker",
+        "group": "Solo",
         "image": schedulerImage,
         "repo": "https://github.com/rbishop85/work-day-scheduler",
         "live": "https://rbishop85.github.io/work-day-scheduler/"
@@ -51,6 +56,7 @@ const data = [
         "id": 6,
         "title": "Note Taker",
         "description": "Takes notes and stores on a server-based json file",
+        "group": "Solo",
         "image": noteImage,
         "repo": "https://github.com/rbishop85/note-taker",
         "live": "https://rb-hw11-note-taker.herokuapp.com/"

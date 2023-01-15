@@ -54,12 +54,6 @@ body {
     box-sizing: content-box;
 }
 
-/* .header .MuiGrid-root.MuiGrid-item {
-    padding-left: 0;
-} */
-
-
-
 #dark .header {
     border-bottom: 3px solid var(--dmprim);
 }
@@ -189,21 +183,24 @@ body {
     position: relative;
 }
 
-.project .details {
-    position: absolute;
-    bottom: 0%;
-    left: 0px;
-    width: 100%;
-    padding: 10px;
+#dark .project .MuiPaper-root.MuiAccordion-root:first-of-type {
+    border-top: 3px solid var(--dmprim);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
-#dark .project .details {
-    background-color: var(--dmtransp);
-    color: var(--dmhl);
+#light .project .MuiPaper-root.MuiAccordion-root:first-of-type {
+    border-top: 3px solid var(--lmprim);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
-#light .project .details {
-    background-color: var(--lmtransp);
+.project .MuiPaper-root.MuiAccordion-root:last-of-type {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.project a:link, .project a:visited, .project a:hover, .project a:active {
     color: var(--lmhl);
 }
 
@@ -352,10 +349,3 @@ background: var(--lmprim);
     color: var(--lmhl);
 }
 
-#dark .project a:link, .project a:visited, .project a:hover, .project a:active {
-    color: var(--dmprim);
-}
-
-#light .project a:link, .project a:visited, .project a:hover, .project a:active {
-    color: var(--lmprim);
-}
