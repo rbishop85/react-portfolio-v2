@@ -104,6 +104,11 @@ export default function Resume({ setCurrentTab }) {
                   <p>Kelley Connect (Merged from Michael Business Machines)</p>
                   <p>Bellingham, WA</p>
                   <p>Copier Service Technician</p>
+                  <div class="duties">
+                    <p>- Mechanically serviced and supported photocopiers from multiple brands with focus on Toshiba and Lexmark.</p>
+                    <p>- Performed network setups including installation of print drivers and setting up scanning to network folders or email servers.</p>
+                    <p>- Used personal judgement to work through assigned calls based on issue severity, customer needs, time restraints and location.</p>
+                  </div>
                 </div>
               </li>
               <li>
@@ -112,6 +117,11 @@ export default function Resume({ setCurrentTab }) {
                   <p>Absorption Corp. (now known as Healthy Pet)</p>
                   <p>Ferndale, WA</p>
                   <p>Graveyard Shift Second Lead</p>
+                  <div class="duties">
+                    <p>- Directed shift workflow to meet production needs and ran shift in absence of primary lead.</p>
+                    <p>- Operated forklift and front-end loader to handle movement of materials and finished goods.</p>
+                    <p>- Trained and supported production workers.</p>
+                  </div>
                 </div>
               </li>
             </ul>

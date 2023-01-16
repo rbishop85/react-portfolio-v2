@@ -216,6 +216,10 @@ body {
     transform: translateX(-50%);
 }
 
+.resume .duties {
+    margin-left: 20px;
+}
+
 #dark .resume .MuiButtonBase-root.MuiButton-root {
     color: var(--dmhl);
     border-color: var(--dmhl);
@@ -290,7 +294,7 @@ position: absolute;
 top: 14px;
 left: -21px;
 width: 2px;
-height: 115px;
+height: calc(100% + 50px);
 background: var(--dmprim);
 }
 
