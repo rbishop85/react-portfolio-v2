@@ -8,10 +8,10 @@ import CardMedia from '@mui/material/CardMedia';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
   // Page layout for each individual project
-export default function Project({ id, title, description, group, image, repo, live }) {
+export default function Project({ id, title, description, tech, group, image, repo, live }) {
   return (
     <Grid item xs={10} md={6} key={id} className="project">
       <Card className="card">
@@ -23,16 +23,19 @@ export default function Project({ id, title, description, group, image, repo, li
           />
           <Accordion>
             <AccordionSummary
-              
+              expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
               <Typography variant="h5">{title} ({group})</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography variant="body2">{description}</Typography>
-              <Typography><a href={repo} target="_blank" rel="noreferrer">Repo</a></Typography>
-              <Typography><a href={live} target="_blank" rel="noreferrer">Live</a></Typography>
+              <Typography>{description}</Typography>
+              <Typography>-</Typography>
+              <Typography>Tech Used: {tech}</Typography>
+              <Typography>-</Typography>
+              <Typography>Repo: <a href={repo} target="_blank" rel="noreferrer">{repo}</a></Typography>
+              <Typography>Live: <a href={live} target="_blank" rel="noreferrer">{live}</a></Typography>
             </AccordionDetails>
           </Accordion>
 
